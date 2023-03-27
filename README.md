@@ -66,8 +66,8 @@ You'll use Pokeapi to GET all the information to complete the exercise
 
     ### Cards
 
-    ![](media/pokedex%20card.png)
-    ![](media/pokedex%20card%202.png)
+    ![](media/pokedex_card.png)
+    ![](media/pokedex_card_2_.png)
 
 
 ### Exercise JS 2 - Pokemon dashboard
