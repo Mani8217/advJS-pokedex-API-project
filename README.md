@@ -24,7 +24,6 @@ Create a **website** capable of:
 - Mobile-first
 
 ## Javascript
-
 File: `script.js`
 
 You'll use Pokeapi to GET all the information to complete the exercise
