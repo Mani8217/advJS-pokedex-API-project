@@ -3,15 +3,20 @@
 ![](media/Pokemon.jpg)
 
 
-In this project, you'll build a pokedex.In Pokemon lore, the Pokedex is a Pokemon dictionary that the characters carry with them. In this device, they can query the Pokemons and learn details about them, such as, abilities, type of Pokemon, strengths and weaknesses. **Students are encouraged to take examples online and implement them**
+In this project, you'll build a pokedex.In Pokemon lore, the Pokedex is a Pokemon dictionary that the characters carry with them. In this device, they can query the Pokemons and learn details about them, such as, abilities, type of Pokemon, strengths and weaknesses. **Students are encouraged to take examples online and implement them.**
 
 ### Main goals
-- Obtain information from third-party API
-- Improve your knowledge ES6
-- Learn more about how to integrate APIs and its interaction with the client
-- Improve your skills in obtaining asynchronous information by using Fetch API
+- DOM manipulation with JS
+- Obtain information from third-party REST API
+- Work with HTTP protocol using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- Learn asynchronous programming
+- Improve your knowledge on `ES6/Advanced JS`
+- Proper use of `HTML5`, `CSS3/SASS`. **Mobile-first**
+- `README.md`: Document your applications
+- Proper use of `Git/GitHub` and branches from the beginning: `main`, `develop`, `feature_1`, `feature_2`, etc...
+- Not allowed to use frameworks or external libraries
 - Structure a web project in a clear and orderly manner
-- Proper use of HTML5, CSS3/SASS
+
 
 ### General analysis
 Create a **website** capable of:
@@ -27,11 +32,12 @@ Create a **website** capable of:
 
 ## JavaScript
 
-- We'll practice ES6/AdvancedJS methods that you've learned during the course.
+You'll practice ES6/AdvancedJS methods that you've learned during the course.
 
 File: `script.js`
 
-You'll use Pokeapi to GET all the information to complete the exercise
+You'll use PokeAPI to GET all the information to complete the exercise
+
 #### PokeAPI -> [API Docs](https://pokeapi.co/docs/v2)
 
 ### Exercise JS 1 - Searching a pokemon
