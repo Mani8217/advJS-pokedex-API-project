@@ -7,10 +7,11 @@ In this project, you'll build a pokedex.In Pokemon lore, the Pokedex is a Pokemo
 
 ### Main goals
 - Obtain information from third-party API
-- Improve your knowledge of HTML5, CSS3 and ES6
+- Improve your knowledge ES6
 - Learn more about how to integrate APIs and its interaction with the client
 - Improve your skills in obtaining asynchronous information by using Fetch API
 - Structure a web project in a clear and orderly manner
+- Proper use of HTML5, CSS3/SASS
 
 ### General analysis
 Create a **website** capable of:
@@ -19,11 +20,15 @@ Create a **website** capable of:
 - Display information of each pokemon in cards
 - Navigate between `search` and `dashboard` views
 
-## HTML + CSS
-- You can adapt/reuse some parts of the previous pokedex that you've made during the course or start from scratch. Here the previous instructions: [pokedex | basic JS](https://refugeescode-materials.netlify.app/pokedex/assignment)
+## HTML + CSS/SASS
+- Use CSS3/SASS techniques that you've learned during the course
 - Mobile-first
+- You can adapt/reuse some parts of the previous pokedex that you've made during the course or start from scratch. Here the previous instructions: [pokedex | basic JS](https://refugeescode-materials.netlify.app/pokedex/assignment)
 
-## Javascript
+## JavaScript
+
+- We'll practice ES6/AdvancedJS methods that you've learned during the course.
+
 File: `script.js`
 
 You'll use Pokeapi to GET all the information to complete the exercise
