@@ -17,6 +17,8 @@ header {
     width: 100%;
     height:500px;
     background-image: url('./media/Pokemon.jpg');
+    background-size: cover;
+    overflow: auto;
 }
 main {
     padding: 40px;
