@@ -7,6 +7,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
 .then(res => res.json())
 .then(data => {
     const results = data.results;
+    console.log(results)
     results.forEach(result => {
       
       fetch(result.url)
