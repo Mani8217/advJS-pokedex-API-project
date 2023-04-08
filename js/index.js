@@ -8,13 +8,14 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
 .then(res => res.json())
 .then(data => {
     const results = data.results;
-   console.log(data)
+   
     results.forEach(result => {
-        //console.log(result)
+        console.log(result)
          
           fetch(`https://pokeapi.co/api/v2/pokemon/${num}/`)
           .then(res => res.json())
           .then(data => {
+            console.log(data)
             const card = document.createElement('div');
             card.className= 'card';
             container.append(card)
@@ -33,6 +34,31 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
             span1.innerHTML = abilities[i].ability.name;
             card.appendChild(span1)
             }
+             const imgKey = Object.keys(data.sprites)
+
+             const sources= []
+             imgKey.forEach(key => {
+              if(key !== null){
+              sources.push(data.sprites[key])
+              }
+              console.log(sources)
+              
+              const image = document.createElement('img')
+              sources.forEach(source => {
+                
+                image.src = source;
+              
+              })
+              
+             
+              card.append(image)
+             }) 
+             
+            
+             
+
+            
+           
             
 
 
