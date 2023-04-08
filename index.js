@@ -1,11 +1,7 @@
 const search = document.querySelector('#search');
 const subject = document.querySelector('#pokemon_name');
 const container = document.getElementById('container');
-const card = document.createElement('div');
 
-
-container.append(card)
-card.className = "card"
 function pokemonSearch(){
 let num = subject.value;
 fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
@@ -19,8 +15,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
           fetch(`https://pokeapi.co/api/v2/pokemon/${num}/`)
           .then(res => res.json())
           .then(data => {
-            
-            const abilities = data.abilities;
+            const card = document.createElement('div');
+            card.className= 'card';
+            container.append(card)
+
+           const abilities = data.abilities;
            console.log(data.name)
            const pokName = document.createElement('h3');
            pokName.innerHTML = data.name;
