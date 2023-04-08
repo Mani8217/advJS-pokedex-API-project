@@ -1,4 +1,6 @@
 # Build your own Pokedex v2 - API calls - JS Advanced
+[click on this to check the page](https://mani8217.github.io/advJS-pokedex-API-project/)
+
 
 ![](media/Pokemon.jpg)
 
