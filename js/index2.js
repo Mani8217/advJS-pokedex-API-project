@@ -58,8 +58,9 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
 
              const sources= []
              imgKey.forEach(key => {
-              
+              if(typeof data.sprites[key] === 'string'){
               sources.push(data.sprites[key])
+              }
               
               console.log(sources)
               
