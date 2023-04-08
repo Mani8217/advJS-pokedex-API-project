@@ -41,19 +41,10 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
             container.append(card)
 
            const abilities = data.abilities;
-           console.log(data.name)
-           const pokName = document.createElement('h3');
-           pokName.innerHTML = data.name;
-           card.append(pokName)
+          
 
             
-            for(let i = 0; i < 2 ; i++){
-               
-            console.log(abilities[i].ability.name)
-            const span1 = document.createElement('span');
-            span1.innerHTML = abilities[i].ability.name;
-            card.appendChild(span1)
-            }
+          
              const imgKey = Object.keys(data.sprites)
 
              const sources= []
@@ -63,19 +54,34 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
               }
               
               console.log(sources)
+            
               
-              const image = document.createElement('img')
-              sources.forEach(source => {
-                
-                image.src = source;
-              
-              })
-              
-             
-              card.append(image)
              }) 
             
+              
+             const image = document.createElement('img')
+             sources.forEach(source => {
+               
+               image.src = source;
+             
+             })
+             card.append(image)
 
+             console.log(data.name)
+             const pokName = document.createElement('h3');
+             pokName.innerHTML = data.name;
+             card.append(pokName)
+
+             for(let i = 0; i < 2 ; i++){
+               
+              console.log(abilities[i].ability.name)
+              const span1 = document.createElement('span');
+              span1.innerHTML = abilities[i].ability.name;
+              card.appendChild(span1)
+              }
+              
+             
+             
            search.disabled = true;
            subject.value = "";
            
