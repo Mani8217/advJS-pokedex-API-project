@@ -7,35 +7,31 @@ body{
     padding: 0;
     background-image: url('../assets/container_bg.png');
 }
-
 @media screen and (max-width: 500px){
-    *{
-        box-sizing: border-box;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        background-image: url('../assets/container_bg.png');
-    }
+  
     #container{
       width: 80%;
       margin: 20px auto;
       padding-top: 6px;
     }  
+    .card{
+        position: relative;
+        transition: 0.5s;
+        margin: 20px;
+        background-color: aquamarine;
+        width: 320px;
+        padding: 10px;
+        border-radius: 10px;
+       
+
+        
+    }
     .card:hover{
-        top:-10;
-        -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-     }
-     .card img{
-         border: 1px solid;
-         border-radius: 10px;
-         width: 300px;
-         background-color: #f1f1f1;
-         margin: 10px auto;
-         padding: 10px;
-     }
+       top: -10px;
+       -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+       -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    }
     .card img{
         border: 1px solid;
         border-radius: 10px;
@@ -49,9 +45,6 @@ body{
     background-image: url('../assets/Pokemon.jpg');
     width: 100%;
     height: 300px;
-   }
-   .marq{
-    padding: 20px;
    }
    .marq a{
     font-family: 'Press Start 2P', cursive;
@@ -71,7 +64,6 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         padding: 30px;
-        padding-top: 6px;
     }
     .header{
         background-image: url('../assets/Pokemon.jpg');
@@ -82,9 +74,8 @@ body{
        .card{
         position: relative;
         transition: 0.5s;
-        
         margin: 20px;
-        background-color: rgb(188, 247, 227);
+        background-color:  rgb(188, 247, 227);
         width: 320px;
         padding: 10px;
         border-radius: 10px;
@@ -92,7 +83,7 @@ body{
         
     }
     .card:hover{
-       top:-10;
+       top:-10px;
        -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
        -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
@@ -105,9 +96,7 @@ body{
         margin: 10px auto;
         padding: 10px;
     }
-    .marq {
-        padding: 20px;
-    }
+
     .marq a{
         font-family: 'Press Start 2P', cursive;
         font-family: 'Space Mono', monospace;
