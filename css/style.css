@@ -12,14 +12,43 @@ header {
     background-size: cover;
     height: 500px;
     width:100% ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 50px;
+    padding: 30px;
+    
+    
 
 }
+
 .poki-name{
     color: white;
 }
 span{
     margin-right:8px;
     color: white;
+}
+.divs {
+    display: none;
+}
+
+.myCard {
+    color: white;
+    background-color: black;
+    width: 300px;
+    margin: 20px auto;
+}
+.myCard img {
+    width: 250px;
+}
+#page2 {
+    background-color: white;
+    height: 400px;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 100%;
+    text-align: center;
 }
 @media screen and (max-width: 500px){
   
