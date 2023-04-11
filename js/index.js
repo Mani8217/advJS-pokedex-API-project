@@ -1,8 +1,61 @@
+function Card(image, name) {
+  this.image = image;
+  this.name = name;
+
+
+  this.render = function() {
+    const cardContainer = document.createElement("div");
+    cardContainer.classList.add("myCard");
+
+    const imageElement = document.createElement("img");
+    imageElement.setAttribute("src", this.imageUrl);
+
+    const nameElement = document.createElement("h2");
+    nameElement.textContent = this.name;
+
+    cardContainer.appendChild(imageElement);
+    cardContainer.appendChild(nameElement);
+
+    return cardContainer;
+  };
+}
+
  const Button = document.querySelector("#btn");
  const Input = document.querySelector("#input-pokemon");
  const  Container = document.querySelector("#container");
- 
-      
+ const newUrl = document.querySelector("#img-input");
+ const pokName = document.querySelector("#poki-name");
+ const createButton = document.querySelector("#createNewEl");
+const container2 = document.querySelector(".container2");
+let cardImg = newUrl.value;
+let cardName = pokName.value;
+
+
+ createButton.addEventListener('click' , function(){
+  
+  const card1 = new Card(cardImg, cardName);
+  const card1Element = card1.render();
+  container2.appendChild(card1Element);
+
+
+ }) 
+
+
+
+
+ function showPage(page){
+  document.querySelectorAll(".divs").forEach(div => {
+    div.style.display = 'none';
+  });
+  document.querySelector(`#${page}`).style.display = 'block';
+ }     
+ document.querySelectorAll('.buttons').forEach(button => {
+  button.addEventListener('click' , function() {
+    showPage(this.dataset.page);
+  })
+ })
+
+
          Button.disabled = true;
           Input.onkeyup = () => {
     
@@ -65,7 +118,8 @@
       }
         console.log(Container)
         Button.addEventListener('click' , function() {
-          Container.innerHTML = "";
+          
+          
           fetch(`https://pokeapi.co/api/v2/pokemon?limit=20&offset=0`)
           .then(res => res.json())
           .then(data => {
@@ -74,6 +128,7 @@
           
               results.forEach(result => {
                   if(result.name.includes(Input.value)){
+                    Container.innerHTML = "";
                     let url = `${result.url}`
                   
                     fetch(url)
@@ -126,6 +181,7 @@
                         Span.innerHTML = abilities[i].ability.name;
                         card.appendChild(Span)
                         }
+
                         
                        
                        
@@ -133,9 +189,12 @@
                      subject.value = "";
       })
     }
+  
   })
+
           
 })
+         
         })               
 
     getPokemon()
