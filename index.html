@@ -13,12 +13,12 @@
 </head>
 <body>
     <header>
-        <marquee class="marq" behavior="" direction="to right" style="font-family: Space Mono;">
-           Let's Know more about Pokemons  
-        </marquee>
+        <button data-page="page1" class="buttons btn btn-warning">Home</button>
+        <button data-page="page2" class="buttons btn btn-warning">Constructor</button>
+        <button data-page="page3" class="buttons btn btn-warning">About</button>
     </header>
    
-    <main style="width:90% ; margin:20px auto;">
+    <main style="width:90% ; margin:20px auto;" id="page1" class="divs">
         
         <div class="input-group mb-3">
             <button class="btn btn-warning" type="button" id="btn">Search</button>
@@ -28,6 +28,20 @@
         
     </div>
     </main>
-    <script src="js/index.js"></script>
+
+      <div id="page2" class="divs">
+        <h3>Create your own pokemon card</h3>
+        <p><label for="img-input">Enter pokemon's Image's source</label></p>
+        <p><input type="text" id="img-input"></p>
+        <p><label for="poki-name">Enter your pokemon's name</label></p>
+            <p><input type="text" id="poki-name"></p>
+        <button id="createNewEl">Create a Pokemon Card</button>
+
+        <div class="container2"></div>
+      
+    </div>
+    <script src="js/index.js" type="module"></script>
+    <script src="./library.js" type="module"></script>
+    
 </body>
 </html>
