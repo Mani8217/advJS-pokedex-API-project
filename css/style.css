@@ -6,6 +6,7 @@ body{
     padding: 0;
     background-image: url('../media/79040.jpg');
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .divs {
@@ -74,7 +75,7 @@ span{
         position: relative;
         transition: 0.5s;
         margin: 20px;
-        background-color: black !important;
+        background-color: black !important
         width: 300px;
         padding: 10px;
         border-radius: 10px;
@@ -116,7 +117,7 @@ span{
 
 }
 
-@media screen and (min-width:400px){ 
+@media screen and (min-width:390px){ 
     #container {
         display: flex;
         flex-wrap: wrap;
@@ -134,7 +135,7 @@ span{
         transition: 0.5s;
         margin: 20px;
         background-color: black !important;
-        max-width: 320px;
+        max-width: 300px;
         padding: 10px;
         border-radius: 10px;
         color: white;
@@ -150,7 +151,7 @@ span{
     .card img{
         border: 1px solid;
         border-radius: 10px;
-        width: 240px;
+        width: 220px;
         background-color: #f1f1f1;
         margin: 10px auto;
         padding: 10px;
