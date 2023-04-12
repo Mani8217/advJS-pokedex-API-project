@@ -1,23 +1,27 @@
-function Card(image, name) {
-  this.image = image;
-  this.name = name;
+const container2 = document.querySelector(".container2");
 
 
-  this.render = function() {
-    const cardContainer = document.createElement("div");
-    cardContainer.classList.add("myCard");
+function Card(name, imageUrl) {
+  // create card div
+  const card = document.createElement('div');
+  card.classList.add('card');
 
-    const imageElement = document.createElement("img");
-    imageElement.setAttribute("src", this.imageUrl);
+  // create image element and set source URL
+  const image = document.createElement('img');
+  image.src = imageUrl;
+  image.alt = name;
+  image.classList.add('myCard');
+  card.appendChild(image);
 
-    const nameElement = document.createElement("h2");
-    nameElement.textContent = this.name;
-
-    cardContainer.appendChild(imageElement);
-    cardContainer.appendChild(nameElement);
-
-    return cardContainer;
-  };
+  // create name element and set text content
+  const nameElement = document.createElement('h2');
+  nameElement.style.color = "white";
+  nameElement.textContent = name;
+  nameElement.classList.add('card-name');
+  card.appendChild(nameElement);
+  container2.appendChild(card);
+  // return card div
+  return card;
 }
 
  const Button = document.querySelector("#btn");
@@ -26,19 +30,21 @@ function Card(image, name) {
  const newUrl = document.querySelector("#img-input");
  const pokName = document.querySelector("#poki-name");
  const createButton = document.querySelector("#createNewEl");
-const container2 = document.querySelector(".container2");
-let cardImg = newUrl.value;
-let cardName = pokName.value;
+const page2 = document.querySelector('#page2')
+
 
 
  createButton.addEventListener('click' , function(){
+  let cardName = pokName.value;
+
+  const inputUrl = newUrl;
+  const name = cardName;
+  const imageUrl = inputUrl.value;
+  const card = new Card(name, imageUrl);
+  container2.appendChild(card);
   
-  const card1 = new Card(cardImg, cardName);
-  const card1Element = card1.render();
-  container2.appendChild(card1Element);
-
-
- }) 
+  
+}) 
 
 
 
