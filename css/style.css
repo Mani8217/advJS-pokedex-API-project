@@ -7,6 +7,10 @@ body{
     background-image: url('../media/79040.jpg');
     background-attachment: fixed;
 }
+
+.divs {
+    display: none;
+}
 header {
     background-image: url('../media/poki.webp');
     background-size: cover;
@@ -30,12 +34,22 @@ span{
     color: white;
 }
 
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 90%;
+    margin: 10px auto;
+    
+}
+
 
 .myCard {
     color: white;
     background-color: black;
     width: 300px;
     margin: 20px auto;
+
 }
 .myCard img {
     width: 250px;
@@ -47,6 +61,7 @@ span{
     padding: 30px;
     grid-template-columns: 100%;
     text-align: center;
+    display: none;
 }
 @media screen and (max-width: 500px){
   
