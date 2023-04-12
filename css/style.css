@@ -63,7 +63,7 @@ span{
     text-align: center;
     display: none;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px){
   
     #container{
       width: 80%;
@@ -75,7 +75,7 @@ span{
         transition: 0.5s;
         margin: 20px;
         background-color: black !important;
-        width: 320px;
+        width: 300px;
         padding: 10px;
         border-radius: 10px;
         color: white;
@@ -92,7 +92,7 @@ span{
     .card img{
         border: 1px solid;
         border-radius: 10px;
-        width: 300px;
+        width: 240px;
         background-color: #f1f1f1;
         margin: 10px auto;
         padding: 10px;
@@ -116,7 +116,7 @@ span{
 
 }
 
-@media screen and (min-width:500px){ 
+@media screen and (min-width:400px){ 
     #container {
         display: flex;
         flex-wrap: wrap;
