@@ -133,7 +133,7 @@ span{
        .card{
         position: relative;
         transition: 0.5s;
-        margin: 20px;
+        margin: 20px auto;
         background-color: black !important;
         max-width: 300px;
         padding: 10px;
