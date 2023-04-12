@@ -2,25 +2,34 @@ const container2 = document.querySelector(".container2");
 
 
 function Card(name, imageUrl) {
-  // create card div
+  
   const card = document.createElement('div');
   card.classList.add('card');
 
-  // create image element and set source URL
+
   const image = document.createElement('img');
   image.src = imageUrl;
   image.alt = name;
   image.classList.add('myCard');
   card.appendChild(image);
 
-  // create name element and set text content
+
   const nameElement = document.createElement('h2');
   nameElement.style.color = "white";
   nameElement.textContent = name;
   nameElement.classList.add('card-name');
   card.appendChild(nameElement);
+  
+
+  const removeCard = document.createElement('button');
+  removeCard.innerText = "remove card";
+  card.appendChild(removeCard);
+  removeCard.addEventListener('click' , function(){
+    this.parentNode.remove();
+  })
   container2.appendChild(card);
-  // return card div
+ 
+  
   return card;
 }
 
@@ -45,6 +54,8 @@ const page2 = document.querySelector('#page2')
   
   
 }) 
+
+
 
 
 
